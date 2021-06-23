@@ -1,12 +1,3 @@
-const assertEqual = (actual, expected) => {
-  if (actual === expected) {
-    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
-
-  } else {
-    console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
-
 const eqArrays = (arr1, arr2) => {
   let output;
 
@@ -37,23 +28,25 @@ const assertArraysEqual = (arr1, arr2) => {
   } (output ? console.log(`✅✅✅ Assertion Passed: ${arr1} === ${arr2}`) : console.log(`🛑🛑🛑 Assertion Failed: ${arr1} !== ${arr2}`));
 };
 
-const flatten = (arr) => {
+const middle = (arr) => {
   let output = [];
 
-  for (const nums of arr) {
-    if (Array.isArray(nums)) {
-      for (const num of nums) {
-        output.push(num);
-      };
+  if (arr.length < 2) {
+    output = [];
 
-    } else {
-      output.push(nums);
+  } else if (arr.length % 2 === 0) {
+    const middleIndexSt = (arr.length / 2) - 1;
+    const middleIndexNd = arr.length / 2;
+    output.push(arr[middleIndexSt], arr[middleIndexNd]);
 
-    }
+  } else {
+    const middleIndex = Math.floor(arr.length / 2);
+    output.push(arr[middleIndex]);
+
   } return output;
 };
 
-// Test
-console.log(flatten([1, 2, [3, 4], 5, [6]])) // => [1, 2, 3, 4, 5, 6]
-
-palindrome - checker
+console.log(middle([1, 2, 3, 4, 5]));
+console.log(middle([1, 2, 3]));
+console.log(middle([1, 2, 3, 4]));
+console.log(middle([1, 2, 3, 4, 5, 6]));
