@@ -22,13 +22,13 @@ const countLetters = (str) => {
     }
 
   } return output;
-}
+};
 
 // TEST CODE
-console.log(countLetters("lighthouse in the house"))
-console.log(countLetters("Lighthouse Labs"))
+console.log(countLetters("lighthouse in the house"));
+console.log(countLetters("Lighthouse Labs"));
 
-const result = countLetters("Lighthouse Labs")
+const result = countLetters("Lighthouse Labs");
 assertEqual(result.l, 2);
 assertEqual(result.h, 2);
 assertEqual(result.t, 2);
