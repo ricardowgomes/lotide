@@ -1,27 +1,16 @@
 // index.js
-const head   = require('./head');
-const tail   = require('./tail');
-const middle = require('./middle');
-const takeUntil = require('./takeUntil');
-const map = require('./map');
-const letterPositions = require('./letterPositions');
-const flatten = require('./flatten');
-const findKeyByValue = require('./findKeyByValue');
-const findKey = require('./findKey');
-const countOnly = require('./countOnly');
+const head   = require('./head'); // OK
+const tail   = require('./tail'); // OK
+const middle = require('./middle'); // OK
+const flatten = require('./flatten'); // OK
+const takeUntil = require('./takeUntil'); // OK
+const map = require('./map'); // OK
+const letterPositions = require('./letterPositions'); // OK
+const findKeyByValue = require('./findKeyByValue'); // OK
+const findKey = require('./findKey'); // OK
+const countOnly = require('./countOnly'); // OK
 const countLetters = require('./countLetters');
 
 module.exports = {
-  head: head,
-  tail: tail,
-  middle: middle,
-  takeUntil: takeUntil,
-  map: map,
-  letterPositions: letterPositions,
-  flatten: flatten,
-  findKeyByValue: findKeyByValue,
-  findKey: findKey,
-  countOnly: countOnly,
-  countLetters: countLetters
+  head, tail, middle, flatten, takeUntil, findKeyByValue, findKey, countOnly, map, letterPositions, countLetters
 };
-
