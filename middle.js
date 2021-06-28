@@ -13,7 +13,7 @@ const middle = (arr) => {
     const middleIndex = Math.floor(arr.length / 2);
     output.push(arr[middleIndex]);
 
-  } return output.join(', ');
+  } return output;
 };
 
 module.exports = middle;
